@@ -1,0 +1,19 @@
+import express from 'express'
+import { Router } from 'express'
+import {RegisterUser} from '../controllers/auth.controller.js'
+
+const router = Router()
+
+
+router.route("/register").post(RegisterUser)
+
+
+
+
+
+
+
+
+
+
+export default router
